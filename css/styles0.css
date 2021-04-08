@@ -1,25 +1,23 @@
 body{
   --bodyBg: #317990;
-  --h1Color:#000000;
+  --h1Color:#182497;
   --h2Color:#052c3b;
   --h3Color: #ffffff;
-  --pColor:#feffde;
+  --pColor:#4d0505;
   --hrColor:#2566ca;
   --aColor: #ffffff;
   --aHovorColor:#000000;
   --topContainerBg:#7bb0a6;
-  --middleContainerBg:linear-gradient(#317990, #5eaaa8, #a3d2ca, #5eaaa8, #317990);
-    /* --middleContainerBg:linear-gradient(#317990, #a4ebf3, #ccf2f4, #a4ebf3, #317990); */
+  --middleContainerBg:linear-gradient(#317990, #bdd2b6, #81b07b, #798777, #317990);
   --bottomContainerBg:#1e1e1e;
   --btnColor:#ffffff;
   --BUTTON2Bg:#ffffff;
   --BUTTON2Color:#000000;
   --BUTTON2HoverBg:#757474;
-    /* --skillOneColor:linear-gradient(#007580, #282846); */
-  --skillOneColor:linear-gradient(#007580, #282846);
-  --skillTwoColor:linear-gradient(#007580, #282846);
-  --skillThreeColor:linear-gradient(#007580, #282846);
-  --skillFourColor:linear-gradient(#007580, #282846);
+  --skillOneColor:linear-gradient(#dcdb7c, #dca97c);
+  --skillTwoColor:linear-gradient(#7c7cdc, #7cdcd9);
+  --skillThreeColor:linear-gradient(#8adc7c, #bbdc7c);
+  --skillFourColor:linear-gradient(#dc9a7c, #d67cdc);
   --iconCOlor:#000000;
   --skillsBorderColor:linear-gradient(#ffffff, #2b2b2b), linear-gradient(#2b2b2b, #2b2b2b), linear-gradient(#2b2b2b, #2b2b2b), linear-gradient(#2b2b2b, #2b2b2b);
 
