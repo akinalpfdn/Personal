@@ -4,18 +4,36 @@
 <head>
   <meta charset="utf-8">
   <title>Akınalp Fidan</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
 
 </head>
 
 
 <body>
-  <div class="fixed-container">
-    <a class="footer-link" href="index_tr.html">Projeler</a>
-    <a class="footer-link" href="index_tr.html">Sertifikalar</a>
-    <a class="footer-link" href="index_tr.html">Hakkımda</a>
+  <div class="fixed-container" , id="navbar">
+    <a class="BUTTON2" href="index.html">Projeler</a>
+    <a class="BUTTON2" href="index.html">Sertifikalar</a>
+    <a class="BUTTON2" href="index.html">Hakkımda</a>
+
+       <label class="switch">
+         <i class="fas fa-adjust icon"></i>
+         <div>
+           <input type="checkbox", id="toggle" />
+           <span class="slider round"></span>
+         </div>
+       </label>
+
+
     <div class="langs">
       <a class="language" href="index.html">EN</a>
       <a class="language" href="index_tr.html">TR</a>
@@ -32,7 +50,7 @@
       </h3>
     </div>
 
-    <img class="mountain" src="images/sunset4.png" alt="mountain-img">
+    <img class="mountain", id="mountain" src="images/sunset2.png" alt="mountain-img">
   </div>
 
   <div class="middle-container">
@@ -48,17 +66,25 @@
     <hr>
     <div class="skills">
       <h2>Yetenek ve Hobilerim </h2>
-      <div class="skill-row">
-        <img class="code-img" src="images/giphy.gif" alt="code-img">
+      <div class="skill-row row">
+        <div class="col-5">
 
-        <h3 class="first-skill">Programlama</h3>
-        <p class="first-skill">Bir şey yaratma fikri ve bir problem çözüldüğünde hissedilen başarı duygusu, kodlamaya
-          başlamamım ana sebeplerinden bazıları. Uzman bir programcı olmasam da her geçen gün yeni şeyler
-          öğreniyorum ve
-          bir noktada bu hobimin kariyerime dönüşmesini istiyorum. Şu anda python ile çalışıyorum ve full-stack web
-          Developer olmak için flask öğreniyorum.
-        </p>
 
+          <img class="skill-img" src="images/giphy.gif" alt="code-img">
+        </div>
+        <div class="col-7">
+          <div class="skill-one">
+
+
+            <h3 class="skill-head">Programlama</h3>
+            <p class="skill-text">Bir şey yaratma fikri ve bir problem çözüldüğünde hissedilen başarı duygusu, kodlamaya
+              başlamamım ana sebeplerinden bazıları. Uzman bir programcı olmasam da her geçen gün yeni şeyler
+              öğreniyorum ve
+              bir noktada bu hobimin kariyerime dönüşmesini istiyorum. Şu anda python ile çalışıyorum ve full-stack web
+              Developer olmak için flask öğreniyorum.
+            </p>
+          </div>
+        </div>
 
       </div>
       <div>
@@ -69,14 +95,19 @@
         <img class="code-example" src="images/Matlab.png" alt="code-img">
       </div>
 
-      <div class="skill-row">
-        <img class="app-img" src="images/code.png" alt="app-img">
+      <div class="skill-row row">
+        <div class="col-7">
+          <div class="skill-two">
+            <h3 class="skill-head">Bilgisayar Programları</h3>
+            <p class="skill-text">Yıllar içerisinde kodlamanın yanı sıra bir çok uygulamayı öğrenme ve projelerimde
+              kullanma fırsatım oldu. Bu uygulamalardan başlıcaları şunlardır;<br>
+              AutoCAD<br> Adobe Photoshop <br>Ms. word<br> Ms. Excell<br> SAP2000</p>
 
-        <h3 class="second-skill">Bilgisayar Programları</h3>
-        <p class="second-skill">Yıllar içerisinde kodlamanın yanı sıra bir çok uygulamayı öğrenme ve projelerimde
-          kullanma fırsatım oldu. Bu uygulamalardan başlıcaları şunlardır;<br>
-          AutoCAD<br> Adobe Photoshop <br>Ms. word<br> Ms. Excell<br> SAP2000</p>
-
+          </div>
+        </div>
+        <div class="col-5">
+          <img class="skill-img" src="images/code.png" alt="app-img">
+        </div>
       </div>
       <div>
         <img class="code-example" src="images/autocad.png" alt="code-img">
@@ -85,54 +116,70 @@
         <img class="code-example" src="images/word.png" alt="code-img">
         <img class="code-example" src="images/sap.png" alt="code-img">
       </div>
-    </div>
-    <div class="skill-row">
-      <img class="cooking-img" src="images/cooking.png" alt="cooking-img">
 
-      <h3 class="third-skill">Yemek Yapma</h3>
-      <p class="third-skill">Üniversiteye ilk başladığımda restoranlara yüzlerce lira ödemek yerine yurtta yemek
-        yapmaya
-        başladım. Yemek yemeyi her zaman sevmişimdir, bu yüzden lezzetli yemekler pişirdikçe, yemek yapmayı o
-        kadar çok sevmeye başladım. Yıllar içinde birçok farklı türde yemek pişirerek kendimi geliştirdim.
-      </p>
+      <div class="skill-row row">
+        <div class="col-5">
+          <img class="skill-img" src="images/cooking.png" alt="cooking-img">
+        </div>
+        <div class="col-7">
+          <div class="skill-three">
+            <h3 class="skill-head">Yemek Yapma</h3>
+            <p class="skill-text">Üniversiteye ilk başladığımda restoranlara yüzlerce lira ödemek yerine yurtta yemek
+              yapmaya
+              başladım. Yemek yemeyi her zaman sevmişimdir, bu yüzden lezzetli yemekler pişirdikçe, yemek yapmayı o
+              kadar çok sevmeye başladım. Yıllar içinde birçok farklı türde yemek pişirerek kendimi geliştirdim.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="code-example" src="images/burger.png" alt="code-img">
+        <img class="code-example" src="images/pizza.png" alt="code-img">
+        <img class="code-example" src="images/soup.png" alt="code-img">
+        <img class="code-example" src="images/steak.png" alt="code-img">
+        <img class="code-example" src="images/pasta.png" alt="code-img">
+      </div>
+      <div class="skill-row row">
+        <div class="col-7">
+              <div class="skill-four">
+          <h3 class="skill-head">Oyun Oynama</h3>
 
-    </div>
-    <div>
-      <img class="code-example" src="images/burger.png" alt="code-img">
-      <img class="code-example" src="images/pizza.png" alt="code-img">
-      <img class="code-example" src="images/soup.png" alt="code-img">
-      <img class="code-example" src="images/steak.png" alt="code-img">
-      <img class="code-example" src="images/pasta.png" alt="code-img">
-    </div>
-    <div class="skill-row">
-      <img class="app-img" src="images/game.gif" alt="app-img">
-
-      <h3 class="fourth-skill">Oyun Oynama</h3>
-      <p class="fourth-skill">Boş zamanlarımda video oyunları oynamayı severim. Genellikle tek oyunculu oyunlar
-        oynamak yerine arkadaşlarımla beraber oyun oynarım çünkü, oyun sırasında oluşan muhabbet ortamını hep
-        sevmişimdir. Arkadaşlarımlada genellikle
-        takım olarak DOTA 2 oynarız.<br></p>
-
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Benimle İrtibata Geçin</h2>
-      <h3>Kodlamayı, yemekleri ya da oyunları seviyorsanız.</h3>
-      <p class="contact-message">Değişik Projeler hakkında tartışırken daima yemekler, bilgisayar oyunları ya da başka
-        şeyler hakkında konuşabiliriz
-      </p>
-      <a class="btn" href="mailto:akinalpfdn@outlook.com">MAİL AT</a>
+            <p class="skill-text">Boş zamanlarımda video oyunları oynamayı severim. Genellikle tek oyunculu oyunlar
+              oynamak yerine arkadaşlarımla beraber oyun oynarım çünkü, oyun sırasında oluşan muhabbet ortamını hep
+              sevmişimdir. Arkadaşlarımlada genellikle
+              takım olarak DOTA 2 oynarız.<br></p>
+          </div>
+        </div>
+        <div class="col-5">
+          <img class="skill-img" src="images/game.gif" alt="app-img">
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Benimle İrtibata Geçin</h2>
+        <h3>Kodlamayı, yemekleri ya da oyunları seviyorsanız.</h3>
+        <p class="contact-message">Değişik Projeler hakkında tartışırken daima yemekler, bilgisayar oyunları ya da başka
+          şeyler hakkında konuşabiliriz
+        </p>
+        <a class="btn" href="mailto:akinalpfdn@outlook.com">MAİL AT</a>
+      </div>
     </div>
   </div>
-
 
   <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/in/akınalp-fidan-0b681616a/">LinkedIn</a>
     <a class="footer-link" href="https://www.instagram.com/akinalp.fidan/?hl=en">Instagram</a>
 
-    <p class="copyright">© 2021 Akınalp Fidan.</p>
+    <p class="copyright">© Copyright 2021 Akınalp Fidan</p>
   </div>
 </body>
+<!-- js for birds -->
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+  body.classList.add('light-theme');
+</script>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </html>

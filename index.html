@@ -4,18 +4,36 @@
 <head>
   <meta charset="utf-8">
   <title>Akınalp Fidan</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+
 
 </head>
 
 
 <body>
-  <div class="fixed-container">
-    <a class="footer-link" href="index.html">Projects</a>
-    <a class="footer-link" href="index.html">Certificates</a>
-    <a class="footer-link" href="index.html">About Me</a>
+  <div class="fixed-container" , id="navbar">
+    <a class="BUTTON2" href="index.html">Projects</a>
+    <a class="BUTTON2" href="index.html">Certificates</a>
+    <a class="BUTTON2" href="index.html">About Me</a>
+
+       <label class="switch">
+         <i class="fas fa-adjust icon"></i>
+         <div>
+           <input type="checkbox", id="toggle" />
+           <span class="slider round"></span>
+         </div>
+       </label>
+
+
     <div class="langs">
       <a class="language" href="index.html">EN</a>
       <a class="language" href="index_tr.html">TR</a>
@@ -31,7 +49,7 @@
       <h3 class="main">a <span class="pro">self-taught</span> programmer, student.</h3>
     </div>
 
-    <img class="mountain" src="images/sunset4.png" alt="mountain-img">
+    <img class="mountain", id="mountain" src="images/sunset2.png" alt="mountain-img">
   </div>
 
   <div class="middle-container">
@@ -48,17 +66,25 @@
     <hr>
     <div class="skills">
       <h2>My Skills and hobbies </h2>
-      <div class="skill-row">
-        <img class="code-img" src="images/giphy.gif" alt="code-img">
+      <div class="skill-row row">
+        <div class="col-5">
 
-        <h3 class="first-skill">Programming</h3>
-        <p class="first-skill">The idea of creating something and the sense of accomplishment felt when a problem solved
-          are the main reasons I started coding. Even though I am not an expert programmer I am constantly learning new
-          things day by day and at some point, I want this hobby to turn into my career. I am currently working with
-          python and learning
-          flask to become a full-stack web Developer.
-        </p>
 
+          <img class="skill-img" src="images/giphy.gif" alt="code-img">
+        </div>
+        <div class="col-7">
+          <div class="skill-one">
+
+
+            <h3 class="skill-head">Programming</h3>
+            <p class="skill-text">The idea of creating something and the sense of accomplishment felt when a problem solved
+              are the main reasons I started coding. Even though I am not an expert programmer I am constantly learning new
+              things day by day and at some point, I want this hobby to turn into my career. I am currently working with
+              python and learning
+              flask to become a full-stack web Developer.
+            </p>
+          </div>
+        </div>
 
       </div>
       <div>
@@ -69,15 +95,20 @@
         <img class="code-example" src="images/Matlab.png" alt="code-img">
       </div>
 
-      <div class="skill-row">
-        <img class="app-img" src="images/code.png" alt="app-img">
+      <div class="skill-row row">
+        <div class="col-7">
+          <div class="skill-two">
+            <h3 class="skill-head">Computer Programs</h3>
+            <p class="skill-text">Besides coding, I had the oppurtunity to learn many applications and use them in my
+              projects over the years such
+              as;<br>
+              AutoCAD<br> Adobe Photoshop <br>Ms. word<br> Ms. Excell<br> SAP2000</p>
 
-        <h3 class="second-skill">Computer Programs</h3>
-        <p class="second-skill">Besides coding, I had the oppurtunity to learn many applications and use them in my
-          projects over the years such
-          as;<br>
-          AutoCAD<br> Adobe Photoshop <br>Ms. word<br> Ms. Excell<br> SAP2000</p>
-
+          </div>
+        </div>
+        <div class="col-5">
+          <img class="skill-img" src="images/code.png" alt="app-img">
+        </div>
       </div>
       <div>
         <img class="code-example" src="images/autocad.png" alt="code-img">
@@ -86,53 +117,69 @@
         <img class="code-example" src="images/word.png" alt="code-img">
         <img class="code-example" src="images/sap.png" alt="code-img">
       </div>
-    </div>
-    <div class="skill-row">
-      <img class="cooking-img" src="images/cooking.png" alt="cooking-img">
 
-      <h3 class="third-skill">Cooking</h3>
-      <p class="third-skill">When I first started University, instead of paying hundreds to restaurants, I started
-        cooking myself in the dormitory. I've always liked to eat so the more I cooked delicious foods, the more I
-        started
-        to like cooking. Over the years I have cooked and improved myself in many different types of food.
+      <div class="skill-row row">
+        <div class="col-5">
+          <img class="skill-img" src="images/cooking.png" alt="cooking-img">
+        </div>
+        <div class="col-7">
+          <div class="skill-three">
+            <h3 class="skill-head">Cooking</h3>
+            <p class="skill-text">When I first started University, instead of paying hundreds to restaurants, I started
+              cooking myself in the dormitory. I've always liked to eat so the more I cooked delicious foods, the more I
+              started
+              to like cooking. Over the years I have cooked and improved myself in many different types of food.
 
-      </p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="code-example" src="images/burger.png" alt="code-img">
+        <img class="code-example" src="images/pizza.png" alt="code-img">
+        <img class="code-example" src="images/soup.png" alt="code-img">
+        <img class="code-example" src="images/steak.png" alt="code-img">
+        <img class="code-example" src="images/pasta.png" alt="code-img">
+      </div>
+      <div class="skill-row row">
+        <div class="col-7">
+              <div class="skill-four">
+          <h3 class="skill-head">Gaming</h3>
 
-    </div>
-    <div>
-      <img class="code-example" src="images/burger.png" alt="code-img">
-      <img class="code-example" src="images/pizza.png" alt="code-img">
-      <img class="code-example" src="images/soup.png" alt="code-img">
-      <img class="code-example" src="images/steak.png" alt="code-img">
-      <img class="code-example" src="images/pasta.png" alt="code-img">
-    </div>
-    <div class="skill-row">
-      <img class="app-img" src="images/game.gif" alt="app-img">
-
-      <h3 class="fourth-skill">Gaming</h3>
-      <p class="fourth-skill">I like to play video games in my spare time. Usually I don't play single-player games,
-        instead I play with my friends as I enjoy our conversations during the games. We usually play DOTA 2 as a
-        team.<br></p>
-
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you love coding, foods or games.</h3>
-      <p class="contact-message">We can always talk about foods, video games or anything while discussing about
-        different project ideas.</p>
-      <a class="btn" href="mailto:akinalpfdn@outlook.com">CONTACT ME</a>
+            <p class="skill-text">I like to play video games in my spare time. Usually I don't play single-player games,
+              instead I play with my friends as I enjoy our conversations during the games. We usually play DOTA 2 as a
+              team.<br></p>
+          </div>
+        </div>
+        <div class="col-5">
+          <img class="skill-img" src="images/game.gif" alt="app-img">
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you love coding, foods or games.</h3>
+        <p class="contact-message">We can always talk about foods, video games or anything while discussing about
+          different project ideas.</p>
+        <a class="btn" href="mailto:akinalpfdn@outlook.com">CONTACT ME</a>
+      </div>
     </div>
   </div>
-
 
   <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/in/akınalp-fidan-0b681616a/">LinkedIn</a>
     <a class="footer-link" href="https://www.instagram.com/akinalp.fidan/?hl=en">Instagram</a>
 
-    <p class="copyright">© 2021 Akınalp Fidan.</p>
+    <p class="copyright">© Copyright 2021 Akınalp Fidan</p>
   </div>
 </body>
+<!-- js for birds -->
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+  body.classList.add('light-theme');
+</script>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </html>

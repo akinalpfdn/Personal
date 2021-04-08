@@ -1,0 +1,48 @@
+.light-theme{
+  --bodyBg: #317990;
+  --h1Color:#2566ca;
+  --h2Color:#052c3b;
+  --h3Color: #ffffff;
+  --pColor:#4d0505;
+  --hrColor:#2566ca;
+  --aColor: #ffffff;
+  --aHovorColor:#000000;
+  --topContainerBg:#7bb0a6;
+  --middleContainerBg:linear-gradient(#317990, #7bb0a6, #81b07b, #09ddcc, #317990);
+  --bottomContainerBg:#1e1e1e;
+  --btnColor:#ffffff;
+  --BUTTON2Bg:#ffffff;
+  --BUTTON2Color:#000000;
+  --BUTTON2HoverBg:#757474;
+  --skillOneColor:linear-gradient(#dcdb7c, #dca97c);
+  --skillTwoColor:linear-gradient(#7c7cdc, #7cdcd9);
+  --skillThreeColor:linear-gradient(#8adc7c, #bbdc7c);
+  --skillFourColor:linear-gradient(#dc9a7c, #d67cdc);
+  --linear-gradient(#ffffff, #2b2b2b), linear-gradient(#2b2b2b, #2b2b2b), linear-gradient(#2b2b2b, #2b2b2b), linear-gradient(#2b2b2b, #2b2b2b);
+
+}
+
+.dark-theme{
+  --bodyBg: #1e1e1e;
+  --h1Color:#2566ca;
+  --h2Color:#9cdcf0;
+  --h3Color: #9cdcfe;
+  --pColor:#ce723b;
+  --hrColor:#2566ca;
+  --aColor: #9cdcfe;
+  --aHovorColor:#eaf6f6;
+  --topContainerBg:#1e1e1e;
+  --middleContainerBg:linear-gradient(#1e1e1e, #2b2b2b, #5b5b5b, #2b2b2b, #1e1e1e);
+  --bottomContainerBg:#1e1e1e;
+  --btnColor:#ce723b;
+  --BUTTON2Bg:#1E1E1E;
+  --BUTTON2Color:#9CDCFE;
+  --BUTTON2HoverBg:#2B2B2B;
+  --skillOneColor:linear-gradient(#272727, #313131);
+  --skillTwoColor:linear-gradient(#464646, #595959);
+  --skillThreeColor:linear-gradient(#494949, #363636);
+  --skillFourColor:linear-gradient(#282828, #252525);
+  --skillsBorderColor:linear-gradient(#000000, #ffffff), linear-gradient(#ffffff, #ffffff), linear-gradient(#ffffff, #ffffff), linear-gradient(#ffffff, #ffffff);
+
+
+}
